@@ -90,9 +90,10 @@ Archives.Cacheable = cacheComponent(Archives, 'widget.archives', (props) => {
     type = 'monthly',
     order = -1,
     showCount = true,
-    format = config.month_format || 'MMMM YYYY',
+    widget = {} ,
   } = props;
   const { url_for, _p } = helper;
+  const { format =  'MMMM YYYY' } = widget;
   const posts = site.posts.sort('date', order);
   if (!posts.length) {
     return null;
