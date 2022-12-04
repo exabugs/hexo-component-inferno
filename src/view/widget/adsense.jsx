@@ -37,7 +37,9 @@ class AdSense extends Component {
             <h3 class="menu-label">{title}</h3>
             <script
               async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              src={'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + clientId}
+              crossorigin="anonymous"
+            ></script>
             <ins
               class="adsbygoogle"
               style="display:block"
