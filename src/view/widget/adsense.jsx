@@ -42,11 +42,11 @@ class AdSense extends Component {
             ></script>
             <ins
               class="adsbygoogle"
-              style="display:block"
+              style="display:block; text-align:center;"
               data-ad-client={clientId}
               data-ad-slot={slotId}
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
+              data-ad-layout="in-article"
+              data-ad-format="fluid"></ins>
             <script
               dangerouslySetInnerHTML={{
                 __html: '(adsbygoogle = window.adsbygoogle || []).push({});',
